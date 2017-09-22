@@ -1,0 +1,416 @@
+body{
+    max-width: 1800px;
+    margin: 0 auto !important;
+    float: none !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+    padding: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    color: gray;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin: 0 10% 0 10%;
+}
+
+.content-main {
+    background-color: #000033;
+}
+
+header{
+    background-color: #2F2F4F;
+    color: #f2f2f2;
+    padding-top: 20px;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+header #header-emblem {
+float: left;
+}
+
+#header-emblem img{
+    height: 120px;
+    width: 120px;
+}
+
+header #header-stars {
+    float: right;
+}
+
+#header-stars img{
+    height: 100px;
+}
+
+header img{
+    float: left;
+}
+
+header h1{
+    float: left;
+}
+
+
+nav {
+    overflow: hidden;
+    background-color: #000033;
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    margin: 0;
+    background-color: #2F2F4F;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* showcase thingo */
+
+/*image source from: http://www.nytimes.com/2013/10/18/movies/amc-theaters-lure-moviegoers-with-cushy-recliners.html*/
+
+#grandOpen{
+    min-height: 500px;
+    background-position: center; /*-300px;*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../photos/seats2.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+
+#grandOpen h1{
+    margin-top:0;
+    font-size: 80px;
+    margin-bottom: 70px;
+}
+
+#grandOpen p{
+    font-size: 25px;
+}
+
+#belt {
+background-color: #000033;
+    color: #ffffff;
+    text-align: center;
+}
+
+#belt h2 {
+    margin-top:5px;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#belt p {
+    max-width: 900px;
+   margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#belt em {
+font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* boxes */
+
+#renoBox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#renoBox .content{
+    width: 100%;
+    margin: 0;
+}
+
+#renoBox .box{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    overflow: hidden;
+}
+
+.box img {
+max-width: 300px;
+    max-height: 300px;
+}
+
+.box p{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+footer {
+    overflow: hidden;
+    background: #2F2F4F;
+    left: 0;
+    right: 0;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-text {
+    color: #fff;
+    list-style: none;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+footer #socialmedias{
+}
+
+#socialmedias img{
+    height:30px;
+    margin-right: 5px;
+}
+
+/* queries */
+
+ @media(max-width: 860px) {
+    #renoBox .box{
+         float: none;
+         text-align: center;
+         width: 100%;
+        margin: 0;
+     }
+
+     .box p {
+         margin-right: 20%;
+         margin-left: 20%;
+     }
+
+     footer{
+         position: relative;
+     }
+
+     #grandOpen h1{
+         margin-top:0;
+         font-size: 50px;
+         margin-bottom: 70px;
+     }
+
+     #grandOpen p{
+         font-size: 20px;
+     }
+
+     #header-stars{
+         display: none;
+     }
+
+
+ }
+
+.active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2F2F4F;
+}
+
+#movies{
+    background-position: center; /*-300px;*/
+    background-color: #000033;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+
+#movies h1{
+    margin-top:0;
+    font-size: 80px;
+    margin-bottom: 70px;
+}
+
+#movies p{
+    font-size: 25px;
+}
+
+.card-image {
+    overflow: hidden;
+    background-color: #000033;
+}
+
+.card-image img {
+    width: 25%;
+    height: auto;
+    margin: 0 0 -30px 0;
+    float: left;
+    display: inline-block;
+}
+
+.image-group img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.feature {
+    float: left;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+}
+
+
+.card {
+    float: left;
+    position: relative;
+    border: 2px solid #f2f2f2;
+    max-width: 100%;
+    margin: 10px 0 0 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 15px #f2f2f2;
+}
+
+.card-content p {
+    color: #333;
+}
+
+.card-content {
+    padding: 10px 25px 25px 25px;
+}
+
+.form-group {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-group select {
+    border: 2px solid #f2f2f2;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    margin: 5px 0 0 0;
+    height: 32px;
+    display: block;
+    border-radius: 0;
+}
+
+.form-group input {
+    border: 2px solid #f2f2f2;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    margin: 5px 0 0 0;
+    height: 32px;
+    display: block;
+    padding-left: 10px;
+    max-width: 64px;
+}
+
+.form-group select:focus {
+    outline: 0;
+    border: 2px solid rgb(0, 135, 255);
+    -moz-box-shadow: 0 0 5px rgb(0, 135, 255);
+    -webkit-box-shadow: 0 0 5px rgb(0, 135, 255);
+    box-shadow: 0 0 5px rgb(0, 135, 255);
+}
+
+.form-group input:focus {
+    outline: 0;
+    border: 2px solid rgb(0, 135, 255);
+    -moz-box-shadow: 0 0 5px rgb(0, 135, 255);
+    -webkit-box-shadow: 0 0 5px rgb(0, 135, 255);
+    box-shadow: 0 0 5px rgb(0, 135, 255);
+}
+
+.form-group label {
+    color: #333;
+}
+
+fieldset {
+    padding-bottom: 25px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+fieldset .pricing {
+    display: inline-block;
+    float: left;
+}
+
+fieldset #seatSelection {
+    display: none;
+}
+
+legend {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.button {
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background: #333333;
+    border: 2px solid #333333;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.button-primary {
+    color: white;
+    background: #2F2F4F;
+    border: 2px solid #000033;
+}
+
+.button-large {
+    padding: 20px 25px 20px 25px;
+    font-size: 18px;
+}
+
+.button-block {
+    width: 100%;
+}
+
+.button-primary:hover {
+    background: #1e1e33;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#booking-button {
+    display: none;
+}

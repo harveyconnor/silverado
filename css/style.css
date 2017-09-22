@@ -179,22 +179,20 @@ footer {
 .footer-text {
     color: #fff;
     list-style: none;
+    padding-left: 0;
+    margin-bottom: 5px;
 }
 
 .footer-text a {
     text-decoration: none;
     color: #fff;
 }
-.footer-text a:hover {
+.email a:hover {
     text-decoration: underline;
 }
 
-footer #socialmedias{
-}
-
-#socialmedias img{
-    height:30px;
-    margin-right: 5px;
+#socialmedia{
+    margin-bottom: 10px;
 }
 
 /* queries */
@@ -413,4 +411,28 @@ legend {
 
 #booking-button {
     display: none;
+}
+
+.fb-icon {
+    color: #3b5998 !important;
+}
+
+a:hover .fb-icon {
+    color: #2b3d6b !important;
+}
+
+.tw-icon {
+    color: #00b6f1 !important;
+}
+
+a:hover .tw-icon {
+    color: #2290bf !important;
+}
+
+.yt-icon {
+    color: #ff0000 !important;
+}
+
+a:hover .yt-icon {
+    color: #b40000 !important;
 }

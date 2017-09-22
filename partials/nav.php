@@ -15,7 +15,7 @@
 
 <nav>
     <div class="content">
-        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/index.php' ? 'active':''); ?>" href="index.php">Home</a>
-        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/showing.php' ? 'active':''); ?>"href="showing.php">Now Showing</a>
+        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/index.php' || $_SERVER['PHP_SELF'] == '/' ? 'active' : ''); ?>" href="index.php">Home</a>
+        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/showing.php' ? 'active' : ''); ?>" href="showing.php">Now Showing</a>
     </div>
 </nav>

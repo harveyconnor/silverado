@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Silverado Cinema - Now Showing</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="https://use.fontawesome.com/daa44d12d2.js"></script>
-
-
-    <!-- this one is the one I used initially  <meta name="viewport" content="width=device-width" -->
-
-</head>
-
+<?php include_once ('partials/header.php'); ?>
 <body>
-
-<header>
-    <div class="content">
-        <div id="header-emblem">
-            <img src="photos/silverado.png" alt="The silverado logo">
-        </div>
-
-        <h1 class="title"><br> <em>The best it gets</em></h1>
-
-        <div id="header-stars">
-            <img src="photos/silverado_stars.png" alt="Silverado stars">
-        </div>
-    </div>
-
-</header>
-
-<nav>
-    <div class="content">
-        <a href="index.php">Home</a>
-        <a class="active" href="showing.php">Now Showing</a>
-    </div>
-</nav>
+<?php include_once ('partials/nav.php'); ?>
 
 <main>
     <section id="movies">
@@ -193,24 +159,8 @@
 
 </main>
 
-<footer>
-    <div class="content">
-        <ul class="footer-text">
-            <li>&copy; <?php echo date("Y"); ?> Silverado Cinema. (Harvey Connor s346111, Samuel Shannon s3645918)</li>
-            <li>
-                <a href="mailto:contact@silveradocinema.com.au">
-                    <i class="fa fa-envelope"></i> contact@silveradocinema.com.au
-                </a>
-            </li>
-        </ul>
-        <div id="socialmedias">
-            <img src="photos/facebook1.png" alt="facebook logo">
-            <img src="photos/youtube.png" alt="youtube logo">
-            <img src="photos/twitter.png" alt="twitter logo">
-        </div>
-    </div>
+<?php include_once('partials/footer.php'); ?>
 
-</footer>
 <script src="js/showing.js" type="text/javascript"></script>
 </body>
 

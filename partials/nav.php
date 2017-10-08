@@ -17,5 +17,6 @@
     <div class="content">
         <a class="<?php echo ($_SERVER['PHP_SELF'] == '/index.php' || $_SERVER['PHP_SELF'] == '/' ? 'active' : ''); ?>" href="index.php">Home</a>
         <a class="<?php echo ($_SERVER['PHP_SELF'] == '/showing.php' ? 'active' : ''); ?>" href="showing.php">Now Showing</a>
+        <a class="<?php echo ($_SERVER['PHP_SELF'] == '/cart.php' ? 'active' : ''); ?> pull-right" href="cart.php"><i class="fa fa-shopping-cart"></i> Shopping Cart</a>
     </div>
 </nav>

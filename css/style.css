@@ -289,13 +289,12 @@ footer {
     float: left;
     position: relative;
     border: 2px solid #f2f2f2;
-    max-width: 100%;
     margin: 10px 0 0 0;
     left: 0;
     right: 0;
     display: block;
-    width: 100%;
     box-shadow: 0 0 15px #f2f2f2;
+    width: 100%;
 }
 
 .card-content p {
@@ -380,8 +379,6 @@ legend {
 .button {
     padding: 5px 10px 5px 10px;
     color: white;
-    background: #333333;
-    border: 2px solid #333333;
     border-radius: 2px;
     font-size: 16px;
 }
@@ -390,6 +387,26 @@ legend {
     color: white;
     background: #2F2F4F;
     border: 2px solid #000033;
+}
+
+.button-danger {
+    color: white;
+    background: #ce0000;
+    border: 2px solid #a80000;
+}
+
+.button-danger:hover {
+    background: #a80000;
+}
+
+.button-success {
+    color: white;
+    background: #5cb646;
+    border: 2px solid #279c11;
+}
+
+.button-success:hover {
+    background: #279c11;
 }
 
 .button-large {
@@ -402,7 +419,7 @@ legend {
 }
 
 .button-primary:hover {
-    background: #1e1e33;
+    background: #000033;
 }
 
 .button:hover {
@@ -435,4 +452,36 @@ a:hover .tw-icon {
 
 a:hover .yt-icon {
     color: #b40000 !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    text-align: center;
+    line-height: 3;
+}
+thead {
+    border-bottom: 2px solid #000033;
+    background: #2F2F4F;
+    color: #fff;
+}
+table, th, td {
+    border: 1px solid #000033;
+    padding: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
 }

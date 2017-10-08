@@ -6,4 +6,5 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://use.fontawesome.com/daa44d12d2.js"></script>
+    <?php session_start(); ?>
 </head>

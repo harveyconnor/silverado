@@ -46,6 +46,7 @@
                 <div class="card" style="display: none;" id="caption">
                     <div class="card-content">
                         <h2 id="caption-title"></h2>
+                        <hr>
                         <p id="caption-rating"></p>
                         <p id="caption-desc"></p>
                         <ul id="caption-sessions">
@@ -56,6 +57,7 @@
                 <div class="card">
                     <div class="card-content">
                         <h2>Book A Movie Session</h2>
+                        <hr>
                         <form action="https://titan.csit.rmit.edu.au/~e54061/wp/silverado-test.php?ref=showing"
                               method="POST">
                             <fieldset>
@@ -144,14 +146,14 @@
                                         </p>
                                     </div>
                             </fieldset>
+                            <div class="form-group">
+                                <button class="button button-primary button-large button-block" id="booking-button">Make
+                                    booking!
+                                </button>
+                            </div>
+                        </form>
+                    </div>
 
-                    </div>
-                    <div class="form-group">
-                        <button class="button button-primary button-large button-block" id="booking-button">Make
-                            booking!
-                        </button>
-                    </div>
-                    </form>
                 </div>
             </div>
         </div>

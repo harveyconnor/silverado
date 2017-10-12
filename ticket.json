@@ -1,0 +1,177 @@
+{
+  "movies" : [
+    {
+      "id": 1,
+      "title": "Dunkirk",
+      "rating": "AC",
+      "sessions": [
+        {
+          "time": "9PM",
+          "day": "Wednesday"
+        },
+        {
+          "time": "9PM",
+          "day": "Thursday"
+        },
+        {
+          "time": "9PM",
+          "day": "Friday"
+        },
+        {
+          "time": "9PM",
+          "day": "Saturday"
+        },
+        {
+          "time": "9PM",
+          "day": "Sunday"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Everybody Loves Somebody",
+      "rating": "RC",
+      "sessions": [
+        {
+          "time": "9PM",
+          "day": "Monday"
+        },
+        {
+          "time": "9PM",
+          "day": "Tuesday"
+        },
+        {
+          "time": "1PM",
+          "day": "Wednesday"
+        },
+        {
+          "time": "1PM",
+          "day": "Thursday"
+        },
+        {
+          "time": "1PM",
+          "day": "Friday"
+        },
+        {
+          "time": "6PM",
+          "day": "Saturday"
+        },
+        {
+          "time": "6PM",
+          "day": "Sunday"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Beauty And The Beast",
+      "rating": "CH",
+      "sessions": [
+        {
+          "time": "1PM",
+          "day": "Monday"
+        },
+        {
+          "time": "1PM",
+          "day": "Tuesday"
+        },
+        {
+          "time": "6PM",
+          "day": "Wednesday"
+        },
+        {
+          "time": "6PM",
+          "day": "Thursday"
+        },
+        {
+          "time": "6PM",
+          "day": "Friday"
+        },
+        {
+          "time": "12PM",
+          "day": "Saturday"
+        },
+        {
+          "time": "12PM",
+          "day": "Sunday"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Salesman",
+      "rating": "AF",
+      "sessions": [
+        {
+          "time": "6PM",
+          "day": "Monday"
+        },
+        {
+          "time": "6PM",
+          "day": "Tuesday"
+        },
+        {
+          "time": "3PM",
+          "day": "Saturday"
+        },
+        {
+          "time": "3PM",
+          "day": "Sunday"
+        }
+      ]
+    }
+
+  ],
+
+  "Seats" : [
+
+    {
+      "id": 1,
+      "name": "FA",
+      "price": 30.00,
+      "discount_price": 25.00
+    },
+    {
+      "id": 2,
+      "name": "FC",
+      "price": 25.00,
+      "discount_price": 20.00
+    },
+    {
+      "id": 3,
+      "name": "SF",
+      "price": 18.50,
+      "discount_price": 12.50
+    },
+    {
+      "id": 4,
+      "name": "SP",
+      "price": 15.50,
+      "discount_price": 10.50
+    },
+    {
+      "id": 5,
+      "name": "SC",
+      "price": 12.50,
+      "discount_price": 8.50
+    },
+    {
+      "id": 6,
+      "name": "BA",
+      "price": 33.00,
+      "discount_price": 22.00
+    },
+    {
+      "id": 7,
+      "name": "BF",
+      "price": 30.00,
+      "discount_price": 20.00
+    },
+    {
+      "id": 8,
+      "name": "BC",
+      "price": 30.00,
+      "discount_price": 20.00
+    }
+  ]
+}

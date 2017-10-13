@@ -13,7 +13,7 @@
         <p>
 
             Renovations are over at Silverado! <br>
-            To Help celebrate we are offering discounted tickets every day at 1PM and all day Monday and Tuesday.
+            To Help celebrate we are offering discounted tickets every day at 1PM and all day Monday and Tuesday.5\
 
         </p>
 

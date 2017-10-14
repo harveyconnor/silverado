@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include_once ('partials/header.php'); ?>
+<?php include_once('partials/header.php'); ?>
 <body>
-<?php include_once ('partials/nav.php'); ?>
+<?php include_once('partials/nav.php'); ?>
 
 <main>
     <section>
@@ -16,34 +16,50 @@
                             Below is a list of all current session bookings in your cart.
                         </p>
                         <p>
-                            If you wish to change the quantity of tickets, enter the numeric value in the quantity field and then click update,
+                            If you wish to change the quantity of tickets, enter the numeric value in the quantity field
+                            and then click update,
                             or click remove if you wish to delete your booking.
                         </p>
+
                         <table>
-                            <thead>
-                                <tr>
-                                    <th>Movie</th>
-                                    <th>Session</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
                             <tbody>
-                            <!-- Loop through each movie form submission in the session. -->
-                                <tr>
-                                    <td>Dunkirk</td>
-                                    <td>7pm</td>
-                                    <td>
-                                        <div class="form-group"><input type="number" value="1"></div>
-                                    </td>
-                                    <td>$50</td>
-                                    <td>
-                                        <button class="button button-primary"><i class="fa fa-pencil"></i> Update</button>
-                                        <button class="button button-danger"><i class="fa fa-times"></i> Remove</button>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="mb-0 mt-0">Captain Underpants (G)</h3>
+                                    <p class="mt-0">Showing at Monday, 1pm
+                                        <button class="button button-danger pull-right"><i class="fa fa-times"></i>
+                                            Delete from Cart
+                                        </button>
+                                    </p>
+                                    <table>
+                                        <thead>
+                                        <tr class="text-center">
+                                            <th>Ticket Type</th>
+                                            <th>Cost</th>
+                                            <th>Quantity</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- Loop through each movie form submission in the session. -->
+                                        <tr class="text-center">
+                                            <td>Standard (Full)</td>
+                                            <td>$12.50</td>
+                                            <td>1</td>
+                                            <td>$12.50</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
                             </tbody>
+                            <tfoot>
+                            <tr class="text-right">
+                                <td>
+                                    Grand Total: $95.50
+                                </td>
+                            </tr>
+                            </tfoot>
                         </table>
                         <p>
                             Click checkout to complete your order!

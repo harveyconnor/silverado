@@ -1,129 +1,173 @@
 {
+  "sessions": [
+    {
+      "id": 1,
+      "time": "1PM",
+      "day": "Monday",
+      "discounted": true
+    },
+    {
+      "id": 2,
+      "time": "6PM",
+      "day": "Monday",
+      "discounted": true
+    },
+    {
+      "id": 3,
+      "time": "9PM",
+      "day": "Monday",
+      "discounted": true
+    },
+    {
+      "id": 4,
+      "time": "1PM",
+      "day": "Tuesday",
+      "discounted": true
+    },
+    {
+      "id": 5,
+      "time": "6PM",
+      "day": "Tuesday",
+      "discounted": true
+    },
+    {
+      "id": 6,
+      "time": "9PM",
+      "day": "Tuesday",
+      "discounted": true
+    },
+    {
+      "id": 7,
+      "time": "1PM",
+      "day": "Wednesday",
+      "discounted": true
+    },
+    {
+      "id": 8,
+      "time": "6PM",
+      "day": "Wednesday",
+      "discounted": false
+    },
+    {
+      "id": 9,
+      "time": "9PM",
+      "day": "Wednesday",
+      "discounted": false
+    },
+    {
+      "id": 10,
+      "time": "1PM",
+      "day": "Thursday",
+      "discounted": true
+    },
+    {
+      "id": 11,
+      "time": "6PM",
+      "day": "Thursday",
+      "discounted": false
+    },
+    {
+      "id": 12,
+      "time": "9PM",
+      "day": "Thursday",
+      "discounted": false
+    },
+    {
+      "id": 13,
+      "time": "1PM",
+      "day": "Friday",
+      "discounted": true
+    },
+    {
+      "id": 14,
+      "time": "6PM",
+      "day": "Friday",
+      "discounted": false
+    },
+    {
+      "id": 15,
+      "time": "9PM",
+      "day": "Friday",
+      "discounted": false
+    },
+    {
+      "id": 16,
+      "time": "12PM",
+      "day": "Saturday",
+      "discounted": false
+    },
+    {
+      "id": 17,
+      "time": "3PM",
+      "day": "Saturday",
+      "discounted": false
+    },
+    {
+      "id": 18,
+      "time": "6PM",
+      "day": "Saturday",
+      "discounted": false
+    },
+    {
+      "id": 19,
+      "time": "9PM",
+      "day": "Saturday",
+      "discounted": false
+    },
+    {
+      "id": 20,
+      "time": "12PM",
+      "day": "Sunday",
+      "discounted": false
+    },
+    {
+      "id": 21,
+      "time": "3PM",
+      "day": "Sunday",
+      "discounted": false
+    },
+    {
+      "id": 22,
+      "time": "6PM",
+      "day": "Sunday",
+      "discounted": false
+    },
+    {
+      "id": 23,
+      "time": "9PM",
+      "day": "Sunday",
+      "discounted": false
+    }
+  ],
   "movies" : [
     {
       "id": 1,
       "title": "Dunkirk",
       "rating": "AC",
-      "sessions": [
-        {
-          "time": "9PM",
-          "day": "Wednesday"
-        },
-        {
-          "time": "9PM",
-          "day": "Thursday"
-        },
-        {
-          "time": "9PM",
-          "day": "Friday"
-        },
-        {
-          "time": "9PM",
-          "day": "Saturday"
-        },
-        {
-          "time": "9PM",
-          "day": "Sunday"
-        }
-      ]
+      "sessions": [9,12,15,19,23]
     },
     {
       "id": 2,
       "title": "Everybody Loves Somebody",
       "rating": "RC",
-      "sessions": [
-        {
-          "time": "9PM",
-          "day": "Monday"
-        },
-        {
-          "time": "9PM",
-          "day": "Tuesday"
-        },
-        {
-          "time": "1PM",
-          "day": "Wednesday"
-        },
-        {
-          "time": "1PM",
-          "day": "Thursday"
-        },
-        {
-          "time": "1PM",
-          "day": "Friday"
-        },
-        {
-          "time": "6PM",
-          "day": "Saturday"
-        },
-        {
-          "time": "6PM",
-          "day": "Sunday"
-        }
-      ]
+      "sessions": [3,6,7,10,13,18,22]
     },
     {
       "id": 3,
       "title": "Beauty And The Beast",
       "rating": "CH",
-      "sessions": [
-        {
-          "time": "1PM",
-          "day": "Monday"
-        },
-        {
-          "time": "1PM",
-          "day": "Tuesday"
-        },
-        {
-          "time": "6PM",
-          "day": "Wednesday"
-        },
-        {
-          "time": "6PM",
-          "day": "Thursday"
-        },
-        {
-          "time": "6PM",
-          "day": "Friday"
-        },
-        {
-          "time": "12PM",
-          "day": "Saturday"
-        },
-        {
-          "time": "12PM",
-          "day": "Sunday"
-        }
-      ]
+      "sessions": [1,4,8,11,14]
     },
     {
       "id": 4,
       "title": "The Salesman",
       "rating": "AF",
-      "sessions": [
-        {
-          "time": "6PM",
-          "day": "Monday"
-        },
-        {
-          "time": "6PM",
-          "day": "Tuesday"
-        },
-        {
-          "time": "3PM",
-          "day": "Saturday"
-        },
-        {
-          "time": "3PM",
-          "day": "Sunday"
-        }
-      ]
+      "sessions": [2,5,17,21]
     }
 
   ],
 
-  "Seats" : [
+  "seats" : [
 
     {
       "id": 1,
@@ -139,7 +183,7 @@
     },
     {
       "id": 3,
-      "name": "SF",
+      "name": "SA",
       "price": 18.50,
       "discount_price": 12.50
     },

@@ -19,6 +19,7 @@ $json_data = json_decode($json, true);
 
 // Get session ['cart'] data (form post data). Add movie information to arrays.
 
+
 if(isset($_SESSION['cart'])) {
     $i = 0;
     foreach ($_SESSION['cart'] as $movie) {
@@ -96,14 +97,14 @@ if(isset($_SESSION['cart'])) {
 <main>
 
 
-    <?php
-
-    $_SESSION = $_POST;
-
-    print_r($_SESSION)
-
-
-    ?>
+<!--    --><?php
+    //
+    //    $_SESSION = $_POST;
+    //
+    //    print_r($_SESSION)
+    //
+    //
+    //    ?>
 
     <section>
         <div class="content">

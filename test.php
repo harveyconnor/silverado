@@ -10,14 +10,14 @@ if(isset($_POST['submit'])) {
     $movie = $_POST['movie'];
     $session = $_POST['session'];
 
-<<<<<<< HEAD
-    print_r($seats);
-=======
+//<<<<<<< HEAD
+//    print_r($seats);
+//=======
     $seats = $_POST['seats'];
 
     $newSeats = [];
     foreach ($seats as $ticket => $quantity) {
->>>>>>> refs/remotes/origin/master
+//>>>>>>> refs/remotes/origin/master
 
         $newSeats[$ticket] = (int)$quantity;
 

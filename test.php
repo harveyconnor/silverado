@@ -10,14 +10,28 @@ if(isset($_POST['submit'])) {
     $movie = $_POST['movie'];
     $session = $_POST['session'];
 
+<<<<<<< HEAD
     print_r($seats);
+=======
+    $seats = $_POST['seats'];
 
-    $_SESSION['cart'] = array(
+    $newSeats = [];
+    foreach ($seats as $ticket => $quantity) {
+>>>>>>> refs/remotes/origin/master
+
+        $newSeats[$ticket] = (int)$quantity;
+
+    }
+
+    $_SESSION['cart'][] = array(
         "movie"     => $movie,
-        "session"   => $session
+        "session"   => $session,
+        "seats"     => $newSeats
     );
 
-    print_r($_SESSION['cart']);
+//    print_r($_SESSION['cart']);
+
+    header('Location: cart.php');
 
 }
 ?>

@@ -1,7 +1,7 @@
 <footer>
     <div class="content">
         <ul class="footer-text">
-            <li>&copy; <?php echo date("Y"); ?> Silverado Cinema. (Harvey Connors346111, Samuel Shannon s3645918)</li>
+            <li>&copy; <?php echo date("Y"); ?> Silverado Cinema. (Harvey Connor s346111, Samuel Shannon s3645918)</li>
             <li>
                 <a href="mailto:contact@silveradocinema.com.au" class="email">
                     <i class="fa fa-envelope"></i> contact@silveradocinema.com.au

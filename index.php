@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html>
 <?php include_once ('partials/header.php'); ?>
+<!DOCTYPE html>
+
+<html>
+
 <body>
 <?php include_once ('partials/nav.php'); ?>
 
@@ -64,5 +66,7 @@
 <?php include_once('partials/footer.php'); ?>
 
 </body>
+
+<?php include_once("/home/eh1/e54061/public_html/wp/debug.php"); ?>
 
 </html>

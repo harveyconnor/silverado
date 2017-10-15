@@ -12,16 +12,15 @@ if(isset($_POST['clear'])) {
 <!DOCTYPE html>
 <html>
 <?php include_once('partials/header.php'); ?>
+
+<!DOCTYPE html>
+
 <?php
 
 $json = file_get_contents('ticket.json');
 $json_data = json_decode($json, true);
 
 // Get session ['cart'] data (form post data). Add movie information to arrays.
-
-//$_SESSION['cart'] = $_POST;
-//
-//echo $_SESSION['cart']['seats'];
 
 if(isset($_SESSION['cart'])) {
     $i = 0;
@@ -99,15 +98,6 @@ if(isset($_SESSION['cart'])) {
 
 <main>
 
-
-<!--    --><?php
-    //
-    //    $_SESSION = $_POST;
-    //
-    //    print_r($_SESSION)
-    //
-    //
-    //    ?>
 
     <section>
         <div class="content">
@@ -198,9 +188,16 @@ if(isset($_SESSION['cart'])) {
                             Click checkout to complete your order!
                         </p>
                         <div class="form-group">
-                            <button class="button button-success pull-right">
+                            <form action="checkout.php">
+                            <button type="submit" class="button button-success pull-right">
                                 <i class="fa fa-arrow-right"></i> Checkout
                             </button>
+                            </form>
+                            <form action="showing.php">
+                            <button type="submit" class="button button-more pull-right">
+                                Add more tickets
+                            </button>
+                            </form>
                             <form action="" method="post">
                                 <button class="button button-danger" name="clear" type="submit" value="submit">
                                     <i class="fa fa-times"></i> Clear Cart
@@ -218,5 +215,7 @@ if(isset($_SESSION['cart'])) {
 <?php include_once('partials/footer.php'); ?>
 
 </body>
+
+<?php include_once("/home/eh1/e54061/public_html/wp/debug.php"); ?>
 
 </html>

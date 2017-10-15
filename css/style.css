@@ -418,6 +418,18 @@ legend {
     background: #279c11;
 }
 
+.button-more{
+    color: white;
+    margin-right: 5px;
+    background-color: #2f2f4f;
+}
+
+.button-more:hover{
+
+    background: #595969;
+
+}
+
 .button-large {
     padding: 20px 25px 20px 25px;
     font-size: 18px;

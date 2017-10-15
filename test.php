@@ -12,14 +12,22 @@ if(isset($_POST['submit'])) {
 
     $seats = $_POST['seats'];
 
-    print_r($seats);
+    $newSeats = [];
+    foreach ($seats as $ticket => $quantity) {
 
-    $_SESSION['cart'] = array(
+        $newSeats[$ticket] = (int)$quantity;
+
+    }
+
+    $_SESSION['cart'][] = array(
         "movie"     => $movie,
-        "session"   => $session
+        "session"   => $session,
+        "seats"     => $newSeats
     );
 
-    print_r($_SESSION['cart']);
+//    print_r($_SESSION['cart']);
+
+    header('Location: cart.php');
 
 }
 ?>

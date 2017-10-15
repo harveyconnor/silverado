@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php include_once ('partials/header.php'); ?>
+
 <body>
 <?php include_once ('partials/nav.php'); ?>
 

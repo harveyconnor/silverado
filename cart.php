@@ -5,6 +5,17 @@
 <?php include_once('partials/nav.php'); ?>
 
 <main>
+
+
+    <?php
+
+    $_SESSION = $_POST;
+
+    print_r($_SESSION)
+
+
+    ?>
+
     <section>
         <div class="content">
             <div class="content-main">

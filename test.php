@@ -10,8 +10,6 @@ if(isset($_POST['submit'])) {
     $movie = $_POST['movie'];
     $session = $_POST['session'];
 
-    $seats = $_POST['seats'];
-
     print_r($seats);
 
     $_SESSION['cart'] = array(

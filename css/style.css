@@ -364,6 +364,15 @@ fieldset {
 fieldset .pricing {
     display: inline-block;
     float: left;
+    width: 30%;
+}
+
+@media(max-width: 1255px) {
+    fieldset .pricing {
+        float: none;
+        width: 100%;
+    }
+
 }
 
 fieldset #seatSelection {
@@ -426,9 +435,9 @@ legend {
     cursor: pointer;
 }
 
-#booking-button {
-    display: none;
-}
+/*#booking-button {*/
+    /*display: none;*/
+/*}*/
 
 .fb-icon {
     color: #3b5998 !important;
@@ -507,3 +516,16 @@ hr {
     background-image: -ms-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
     background-image: -o-linear-gradient(left, #8c8b8b, #8c8b8b, #f0f0f0);
 }
+
+.alerts{
+    color : red;
+}
+
+#subtotalLoc{
+
+    /*border: 2px;*/
+    /*border-color: #8c8b8b;*/
+    font-weight: bold;
+    font-size: larger;
+}
+

@@ -377,7 +377,5 @@ if(isset($_POST['submit'])) {
 <script src="js/showing.js" type="text/javascript"></script>
 </body>
 
-<?php include_once("/home/eh1/e54061/public_html/wp/debug.php"); ?>
-
 
 </html>

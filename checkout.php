@@ -10,20 +10,31 @@
 
 <main>
 
-<h1>Enter customer details</h1>
+<h1>&nbsp Enter customer details to checkout!</h1>
 
-    <div class="card">
-    <div class="card-content">
-        <fieldset class="pricing">
-    <form action="receipt.php" method="post" id="custForm" onsubmit="return custCheck()">
+    <section>
+    <div class="content">
+        <div class="content-main">
+            <div class="card">
+                <div class="card-content">
+                     <fieldset class="pricing">
+        <form action="receipt.php" method="post" id="custForm" onsubmit="return custCheck()">
 
         <div>
-        <label for="custName">Full name:</label>
-        <input id="custName" required type="text" name="custName"/>
-            <span class="alerts" id="nameSpan"></span>
+        <label for="firstName">First name:</label>
+        <input id="firstName" required type="text" name="firstName"/>
+            <span class="alerts" id="firstSpan"></span>
         </div>
 
         <br>
+
+            <div>
+                <label for="lastName">Last name:</label>
+                <input id="lastName" required type="text" name="lastName"/>
+                <span class="alerts" id="lastSpan"></span>
+            </div>
+
+            <br>
 
         <div>
         <label for="custEmail">Email address:</label>
@@ -35,13 +46,13 @@
         <div>
         <label for="custNum">Aus mobile number:</label>
         <input id="custNum" required type="text"  name="custNum"/>
-            <span class="alerts" id="nameSpan"></span>
+            <span class="alerts" id="numSpan"></span>
         </div>
 
         <br>
 
         <div>
-        <button class="button button-primary button-large button-block" name="submit" id="checkout-button">Complete checkout</button>
+        <button class="button button-primary button-large button-block" id="checkout-button">Complete checkout</button>
         </div>
 
     </form>
@@ -51,6 +62,9 @@
     </div>
 
     </div>
+        </div>
+    </div>
+    </section>
 
 
 
@@ -61,9 +75,9 @@
     function custCheck(){
 
         var name = checkName();
-//        var email = checkEmail();
+        var email = checkEmail();
         var number = checkPhone();
-        if(name && number){
+        if(name && number && email){
             return true;
         }else{
             return false;
@@ -72,30 +86,64 @@
 
     function checkName(){
 
-       var name = document.getElementById("custName").value;
-       var replacement = name.replace(/[^A-Za-z]/g, "");
+        var first = false;
+        var second = false;
+       var firstName = document.getElementById("firstName").value;
+       var lastName = document.getElementById("lastName").value;
+       var regex = /[a-z]{2,}/i;
 
-       if(replacement == name){
-           return true;
+       if(regex.test(firstName)){
+           first = true
+           document.getElementById("firstSpan").innerHTML = "";
        }else{
-           document.getElementById("nameSpan").innerHTML = "This name is invalid, try " + replacement;
-           return false;
+           document.getElementById("firstSpan").innerHTML = "This name is invalid";
+           first = false;
        }
+
+        if(regex.test(lastName)){
+            second = true;
+            document.getElementById("lastSpan").innerHTML = "";
+        }else{
+            document.getElementById("lastSpan").innerHTML = "This name is invalid";
+            second = false;
+        }
+
+        if(first && second){
+            return true;
+        }else{
+            return false;
+        }
 
     }
 
  function checkPhone(){
 
      var num = document.getElementById("custNum").value;
-     //this does not work for some reason
-     var replacement = num.replace(/^(\(04\)|04|\+614)([ ]?\d){8}$/g, "");
+     var regex = /^(\(04\)|04|\+614)([ ]?-?\d){8}$/;
 
-     if(replacement == num){
+     if(regex.test(num)){
+         document.getElementById("numSpan").innerHTML = "";
          return true;
      }else{
-         document.getElementById("numSpan").innerHTML = "This number is invalid, try " + replacement;
+         document.getElementById("numSpan").innerHTML = "This number is invalid";
          return false;
      }
+
+ }
+
+ function checkEmail(){
+
+     var email = document.getElementById("custEmail").value;
+     var regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+     if(regex.test(email)){
+         document.getElementById("emailSpan").innerHTML = "";
+         return true;
+     }else{
+         document.getElementById("emailSpan").innerHTML = "Invalid Email";
+         return false;
+     }
+
 
 
  }
@@ -107,7 +155,5 @@
 
 </body>
 
-
-<?php include_once("/home/eh1/e54061/public_html/wp/debug.php"); ?>
 
 </html>

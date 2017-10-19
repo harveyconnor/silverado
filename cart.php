@@ -13,6 +13,21 @@ if(isset($_POST['clear'])) {
 <html>
 <?php include_once('partials/header.php'); ?>
 
+<?php
+
+if(isset($_POST['deletefromcart'])) {
+
+    array_splice($_SESSION['cart'], $_POST['id'], 1);
+    $_SESSION['total'] -= $_POST['price'];
+    if (count($_SESSION['cart']) < 1) {
+        session_unset();
+        session_destroy();
+    }
+    header('Location: cart.php');
+}
+
+?>
+
 <!DOCTYPE html>
 
 <?php
@@ -120,16 +135,28 @@ if(isset($_SESSION['cart'])) {
                             <?php
                             if(isset($_SESSION['cart'])) {
                                 // Display each movie
+                                $i = 0;
                                 foreach ($_SESSION['cart'] as $movie) {
 //                                    print_r($movie);
                                 ?>
                             <tr>
                                 <td>
-                                    <h3 class="mb-0 mt-0"><?php echo $movie['title']; ?> <small>(<?php echo $movie['rating']; ?>)</small></h3>
-                                    <p class="mt-0"><?php echo $movie['day'] . ', ' . $movie['time']; ?>
-                                        <button class="button button-danger pull-right"><i class="fa fa-times"></i>
+                                    <form action="" method="post">
+                                        <input hidden name="id" value="<?php echo $i; ?>">
+                                        <input hidden name="price" value="<?php echo $subtotal; ?>">
+                                        <button type="submit" name="deletefromcart" class="button button-danger pull-right"><i class="fa fa-times"></i>
                                             Delete from Cart
                                         </button>
+                                    </form>
+                                    <h3 class="mb-0 mt-0"><?php echo $movie['title']; ?> <small>(<?php echo $movie['rating']; ?>)</small></h3>
+                                    <p class="mt-0"><?php echo $movie['day'] . ', ' . $movie['time']; ?>
+                                    <?php $subtotal = 0;
+                                        foreach ($movie['seats'] as $ticket) {
+                                            if ($ticket > 0) {
+                                                $subtotal += (double)$ticket['price'] * (double)$ticket['quantity'];
+                                            }
+                                        }
+                                        ?>
                                     </p>
                                     <table>
                                         <thead>
@@ -144,6 +171,7 @@ if(isset($_SESSION['cart'])) {
                                         <!-- Loop through each movie form submission in the session. -->
                                         <?php
 
+                                        $subtotal = 0;
                                         foreach ($movie['seats'] as $ticket) {
                                             if ($ticket > 0) {
                                                 ?>
@@ -154,16 +182,26 @@ if(isset($_SESSION['cart'])) {
                                                     <td><?php echo '$ ' . number_format(((double)$ticket['price'] * (double)$ticket['quantity']), 2); ?></td>
                                                 </tr>
                                                 <?php
+                                                $subtotal += (double)$ticket['price'] * (double)$ticket['quantity'];
                                             }
                                           // End ticket loop
                                         }
                                         ?>
                                         </tbody>
+                                        <tfoot>
+                                            <tr class="text-right">
+                                                <td></td><td></td><td></td>
+                                                <td>
+                                                    Sub-Total: <?php echo '$ ' . number_format($subtotal, 2); ?>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
                                     </table>
                                 </td>
                             </tr>
                             <?php
                                     // End foreach loop
+                                    $i++;
                                 }
                                 // End IF
                             }
@@ -193,16 +231,20 @@ if(isset($_SESSION['cart'])) {
                                 <i class="fa fa-arrow-right"></i> Checkout
                             </button>
                             </form>
-                            <form action="showing.php">
-                            <button type="submit" class="button button-more pull-right">
-                                Add more tickets
-                            </button>
-                            </form>
-                            <form action="" method="post">
+                        </div>
+                        <div class="form-group">
+                            <a href="showing.php">
+                                <button type="submit" class="button button-primary pull-right mr-1">
+                                    Add more tickets
+                                </button>
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <a href="sessionclear.php">
                                 <button class="button button-danger" name="clear" type="submit" value="submit">
                                     <i class="fa fa-times"></i> Clear Cart
                                 </button>
-                            </form>
+                            </a>
                         </div>
                     </div>
                 </div>

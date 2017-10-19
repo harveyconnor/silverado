@@ -9,10 +9,29 @@ if(empty($_POST)) {
 }else{
 $_SESSION["custDetails"] = $_POST;
 }
+
 ?>
 <html>
 
+<?php
 
+// Write to csv.
+$my_file = 'orders/orders.csv';
+
+$handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
+// Excel fix
+//fputs($handle, $bom =( chr(0xEF) . chr(0xBB) . chr(0xBF) ));
+$data = array(
+    'name'      => $_SESSION["custDetails"]["firstName"] . ' ' . $_SESSION["custDetails"]["lastName"],
+    'email'     => $_SESSION["custDetails"]["custEmail"],
+    'mobile'    => $_SESSION["custDetails"]["custNum"],
+    'movie'     => json_encode($_SESSION['cart'])
+);
+
+fputcsv($handle, $data);
+fclose($handle);
+
+?>
 
 <body>
 
@@ -25,21 +44,28 @@ $_SESSION["custDetails"] = $_POST;
             <div class="content-main">
                 <div class="card">
                     <div class="card-content">
-                        <button class="button button-success pull-right">
-                            <i class="fa fa-arrow-right"></i>Print Page</button>
-<!--                        I HAVEN'T MADE THIS WORK YET-->
+                        <script>
+                            function print_tickets() {
+                                my_window = window.open('receipt_print.php', 'mywindow', 'status=1,width=900,height=600');
+                                my_window.print();
+                            }
+                        </script>
+                        <button class="button button-success pull-right" onclick="print_tickets()">
+                            <i class="fa fa-arrow-right"></i> Print Tickets</button>
                         <h1>Confirmation page</h1>
                         <hr>
 
-                            <?php $receiptNumber= 0;
-                            if(isset($_SESSION['cart'])) {
+                            <?php
 
+                            if(isset($_SESSION['cart'])) {
+                                $receiptNumber = rand(1000,10000);
                                 foreach ($_SESSION['cart'] as $movie) {
                                     $total = 0.00;
                                     $numtickets = 0.00;
-                                    $receiptNumber++?>
+                                    $receiptNumber++;
+                                    ?>
 
-                                    <h2>Receipt number <?php echo $receiptNumber ?> </h2>
+                                    <h2>Receipt #<?php echo $receiptNumber ?> </h2>
                                     <table>
                                         <tr>
                                             <td><?php echo "Name: ".$_SESSION["custDetails"]["firstName"] . " " . $_SESSION["custDetails"]["lastName"]; ?></td>
@@ -50,7 +76,7 @@ $_SESSION["custDetails"] = $_POST;
                                             <td><?php echo $movie['title']; ?></td>
                                         </tr>
                                         <tr>
-                                            <td><?php echo "Mobile :".$_SESSION["custDetails"]["custNum"]; ?></td>
+                                            <td><?php echo "Mobile: ".$_SESSION["custDetails"]["custNum"]; ?></td>
                                             <td><?php echo $movie['day'] . ', ' . $movie['time']; ?></td>
                                         </tr>
 
@@ -84,29 +110,33 @@ $_SESSION["custDetails"] = $_POST;
                                     </table>
 
                                     <?php
-                                    foreach ($movie['seats'] as $ticket) { ?>
+                                    foreach ($movie['seats'] as $ticket) {
+                                        if ($ticket > 0) {
+                                        ?>
 
                                         <table class="ticketStyle">
 
-                                            <?php
-                                    for($i = 0; $i < $ticket['quantity']; $i++){
-                                        ?>
-                                        <tr>
-                                            <td>
-                                                Silverado <br>
-                                                <?php echo $movie["day"]." ".$movie['time']  ?> <br>
-                                                <?php echo $movie['title']  ?> <br> <br> <br>
-                                                <?php echo $ticket['title'] ?>
-                                            </td>
-                                            <td class="ticketTd">
-                                                <img src="photos/lineofstars.png" alt="a line of stars">
-<!--                                                lines of stars image sourced from: http://clipart-library.com/clipart/1054263.htm-->
-                                                <h1>ADMIT ONE</h1>
-                                                <img src="photos/lineofstars.png" alt="a line of stars">
-                                            </td>
-                                        </tr>
+                                        <?php
+                                        for ($i = 0; $i < $ticket['quantity']; $i++) {
+                                            ?>
+                                            <tr>
+                                                <td>
+                                                    Silverado <br>
+                                                    <?php echo $movie["day"] . " " . $movie['time'] ?> <br>
+                                                    <?php echo $movie['title'] ?> <br> <br> <br>
+                                                    <?php echo $ticket['title'] ?>
+                                                </td>
+                                                <td class="ticketTd">
+                                                    <img src="photos/lineofstars.png" alt="a line of stars">
+                                                    <!--                                                lines of stars image sourced from: http://clipart-library.com/clipart/1054263.htm-->
+                                                    <h1>ADMIT ONE</h1>
+                                                    <img src="photos/lineofstars.png" alt="a line of stars">
+                                                </td>
+                                            </tr>
 
-                                    <?php } ?>
+                                        <?php }
+                                    }
+                                    ?>
 
 
                                         </table>

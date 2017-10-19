@@ -13,14 +13,11 @@ if(isset($_POST['submit'])) {
     $movie = $_POST['movie'];
     $session = $_POST['session'];
 
-//<<<<<<< HEAD
-//    print_r($seats);
-//=======
     $seats = $_POST['seats'];
 
     $newSeats = [];
     foreach ($seats as $ticket => $quantity) {
-//>>>>>>> refs/remotes/origin/master
+
 
         $newSeats[$ticket] = (int)$quantity;
 
@@ -98,26 +95,29 @@ if(isset($_POST['submit'])) {
                 <div class="card">
                     <div class="card-content">
                         <h2>Book A Movie Session</h2>
-                        <form action="" method="POST" id="ticket-form" onkeyup="printSubtotal()" onsubmit="return formCheck()">
-                            <label for="movie">Movie</label>
-                            <select name="movie" id="movie" onchange="showSessions()">
-                                <option selected>Please select a movie</option>
-                                <?php
-                                foreach ($json_data["movies"] as $movie) {
-                                    ?>
-                                    <option value="<?php echo $movie['id']; ?>"><?php echo $movie['title']; ?></option>
+                        <form action="" method="POST" id="ticket-form" oninput="printSubtotal()" onsubmit="return formCheck()">
+                            <div class="form-group">
+                                <label for="movie">Movie</label>
+                                <select name="movie" id="movie" onchange="showSessions()">
+                                    <option selected>Please select a movie</option>
                                     <?php
-                                }
-                                ?>
-                            </select>
-                            <span class="alerts" id="movieSpan"></span>
-                            <br>
-                            <label for="session">Session</label>
-                            <select name="session" id="session" onchange="printSubtotal()">
-                                <option selected>Please select a session time</option>
-                            </select>
-                            <span class="alerts" id="sessionSpan"></span>
+                                    foreach ($json_data["movies"] as $movie) {
+                                        ?>
+                                        <option value="<?php echo $movie['id']; ?>"><?php echo $movie['title']; ?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                                <span class="alerts" id="movieSpan"></span>
+                            </div>
 
+                            <div class="form-group">
+                                <label for="session">Session</label>
+                                <select name="session" id="session" onchange="printSubtotal()">
+                                    <option selected>Please select a session time</option>
+                                </select>
+                                <span class="alerts" id="sessionSpan"></span>
+                            </div>
                             <fieldset>
                                 <legend>Seats</legend>
                                 <span class="alerts" id="seatSpan"></span>
@@ -178,8 +178,6 @@ if(isset($_POST['submit'])) {
                                 <label>Subtotal</label>
                                 <span id="subtotal"></span>
                                 <button class="button button-primary button-large button-block" name="submit" id="booking-button">Make booking!</button>
-
-
                             </div>
                         </form>
                     </div>
@@ -265,10 +263,10 @@ if(isset($_POST['submit'])) {
 
                     if(getPrice()) {
                         subtotal += seatsArray[j].discount_price * Number(document.getElementById(ticketArray[i]).value);
-                        document.getElementById(seatsArray[j].name + '-price').innerText = '$ ' + seatsArray[j].discount_price * Number(document.getElementById(ticketArray[i]).value);
+                        document.getElementById(seatsArray[j].name + '-price').innerText = '$ ' + (seatsArray[j].discount_price * Number(document.getElementById(ticketArray[i]).value)).toFixed(2);
                     } else {
                         subtotal += seatsArray[j].price * Number(document.getElementById(ticketArray[i]).value);
-                        document.getElementById(seatsArray[j].name + '-price').innerText = '$ ' + seatsArray[j].price * Number(document.getElementById(ticketArray[i]).value);
+                        document.getElementById(seatsArray[j].name + '-price').innerText = '$ ' + (seatsArray[j].price * Number(document.getElementById(ticketArray[i]).value)).toFixed(2);
                     }
 
                 }

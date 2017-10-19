@@ -12,6 +12,9 @@ if(isset($_POST['clear'])) {
 <!DOCTYPE html>
 <html>
 <?php include_once('partials/header.php'); ?>
+
+<!DOCTYPE html>
+
 <?php
 
 $json = file_get_contents('ticket.json');
@@ -94,6 +97,8 @@ if(isset($_SESSION['cart'])) {
 <?php include_once('partials/nav.php'); ?>
 
 <main>
+
+
     <section>
         <div class="content">
             <div class="content-main">
@@ -183,9 +188,16 @@ if(isset($_SESSION['cart'])) {
                             Click checkout to complete your order!
                         </p>
                         <div class="form-group">
-                            <button class="button button-success pull-right">
+                            <form action="checkout.php">
+                            <button type="submit" class="button button-success pull-right">
                                 <i class="fa fa-arrow-right"></i> Checkout
                             </button>
+                            </form>
+                            <form action="showing.php">
+                            <button type="submit" class="button button-more pull-right">
+                                Add more tickets
+                            </button>
+                            </form>
                             <form action="" method="post">
                                 <button class="button button-danger" name="clear" type="submit" value="submit">
                                     <i class="fa fa-times"></i> Clear Cart

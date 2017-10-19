@@ -291,19 +291,31 @@
       <workItem from="1507249953784" duration="3404000" />
       <workItem from="1507273631950" duration="9000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1507805739525" duration="4711000" />
+>>>>>>> refs/remotes/origin/master
+=======
+      <workItem from="1507805739525" duration="4933000" />
+      <workItem from="1507858236742" duration="7600000" />
+>>>>>>> refs/remotes/origin/master
+=======
       <workItem from="1507805739525" duration="4933000" />
       <workItem from="1507858236742" duration="7600000" />
 =======
       <workItem from="1507805739525" duration="4711000" />
 >>>>>>> refs/remotes/origin/master
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     <option name="totallyTimeSpent" value="22234000" />
 =======
+>>>>>>> refs/remotes/origin/master
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="50881000" />
   </component>
@@ -318,7 +330,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
 =======
     <option name="totallyTimeSpent" value="14412000" />
+<<<<<<< HEAD
+=======
+    <option name="totallyTimeSpent" value="22234000" />
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="712" extended-state="0" />
@@ -330,10 +348,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> refs/remotes/origin/master
+=======
 =======
 >>>>>>> refs/remotes/origin/master
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -343,10 +368,17 @@
 =======
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> refs/remotes/origin/master
+=======
 =======
 >>>>>>> refs/remotes/origin/master
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -462,12 +494,21 @@
     <entry file="file://$PROJECT_DIR$/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="3102">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+=======
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+>>>>>>> refs/remotes/origin/master
+=======
         <state relative-caret-position="336">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 =======
         <state relative-caret-position="3102">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
@@ -519,12 +560,21 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="6369">
+          <caret line="193" column="13" lean-forward="false" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+=======
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+>>>>>>> refs/remotes/origin/master
+=======
         <state relative-caret-position="336">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 =======
         <state relative-caret-position="6369">
           <caret line="193" column="13" lean-forward="false" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
@@ -583,9 +633,12 @@
     <entry file="file://$PROJECT_DIR$/sessions.json">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
         <state relative-caret-position="336">
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 =======
+>>>>>>> refs/remotes/origin/master
         <state relative-caret-position="462">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
@@ -595,7 +648,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="17" column="79" lean-forward="true" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+<<<<<<< HEAD
+=======
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
@@ -626,12 +686,21 @@
     <entry file="file://$PROJECT_DIR$/sessions.json">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="462">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+=======
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+>>>>>>> refs/remotes/origin/master
+=======
         <state relative-caret-position="336">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 =======
         <state relative-caret-position="462">
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
@@ -703,12 +772,21 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="16434">
+          <caret line="498" column="23" lean-forward="false" selection-start-line="498" selection-start-column="23" selection-end-line="498" selection-end-column="23" />
+=======
+        <state relative-caret-position="336">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+>>>>>>> refs/remotes/origin/master
+=======
         <state relative-caret-position="336">
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
 =======
         <state relative-caret-position="16434">
           <caret line="498" column="23" lean-forward="false" selection-start-line="498" selection-start-column="23" selection-end-line="498" selection-end-column="23" />
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
         </state>
       </provider>
     </entry>
@@ -758,8 +836,11 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/css/style.css">
 =======
+>>>>>>> refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/jstest.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -774,7 +855,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phptest.php">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
@@ -799,7 +886,10 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/jsdraft.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -813,7 +903,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> sam
+>>>>>>> refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/sessions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">

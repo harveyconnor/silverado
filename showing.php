@@ -171,7 +171,7 @@ if(isset($_POST['submit'])) {
                                         <span id="BC-price"></span>
                                     </div>
                                 </fieldset>
-
+*Discounted prices apply to all sessions Monday and Tuesday, and 1pm sessions only Monday to Friday.
                             </fieldset>
 
                             <div class="form-group" id="subtotalLoc">
